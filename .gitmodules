@@ -1,0 +1,3 @@
+[submodule "stay-organized-workshop-express-server"]
+	path = stay-organized-workshop-express-server
+	url = https://github.com/DevelopIntelligenceBoulder/stay-organized-workshop-express-server.git
