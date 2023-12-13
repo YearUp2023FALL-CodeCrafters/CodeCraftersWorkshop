@@ -77,9 +77,6 @@ function displayUserTodo(userTodos){
         let completedCell = row.insertCell(5);
         completedCell.innerHTML = todo.completed ? '✓' : 'X';
 
-        // let userIdCell = row.insertCell(6);
-        // userIdCell.innerHTML = todo.userid;
-
     })
     
 }
