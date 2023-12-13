@@ -6,9 +6,16 @@
     <title>Add Todo</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body id="addBody">
+  <body>
+    <header>
+      <h2><a href="/">Home</a></h2>
+      <div>
+        <a href="./new_user.html">Add-User</a>
+        <a href="./add-todo.html">Add Todo</a>
+      </div>
+    </header>
     <form id="addForm">
-        <h2>Add A Todo</h2>
+      <h2>Add A Todo</h2>
       <select name="userSelect" id="userSelect">
         <option value="">Select User</option>
       </select>
@@ -38,7 +45,6 @@
     </form>
 
     <div id="resultContainer"></div>
-
 
     <script src="scripts/add-todo.js"></script>
   </body>
