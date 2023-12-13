@@ -40,8 +40,46 @@ function fetchUserTodos(userId) {
         });
 }
 
-
 //
-function displayUserTodo(){
+function displayUserTodo(userTodos){
+    let userTable = document.querySelector('#userTodoTable');
+
+
+    userTable.innerHTML = `
+    <tr>
+    <th>ID</th>
+    <th>Category</th>
+    <th>Description</th>
+    <th>Deadline</th>
+    <th>Priority</th>
+    <th>Completed</th>
+    </tr>`;
+
+
+    userTodos.forEach(todo => {
+        let row = userTable.insertRow();
+
+
+        let idCell = row.insertCell(0);
+        idCell.innerHTML = todo.id;
+
+        let categoryCell = row.insertCell(1);
+        categoryCell.innerHTML = todo.category;
+
+        let descriptionCell = row.insertCell(2);
+        descriptionCell.innerHTML = todo.description;
+
+        let deadlineCell = row.insertCell(3);
+        deadlineCell.innerHTML = todo.deadline;
+
+        let priorityCell = row.insertCell(4);
+        priorityCell.innerHTML = todo.priority;
+
+        let completedCell = row.insertCell(5);
+        completedCell.innerHTML = todo.completed ? 'Yes' : 'No';
+    })
+    
+
+
 
 }
