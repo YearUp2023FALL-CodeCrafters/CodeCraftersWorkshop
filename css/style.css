@@ -1,9 +1,23 @@
-#addBody {
-  width: 100vh;
-  height: 100vh;
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(1, 2, 53);
+  color: white;
+}
+header > div {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 20px;
+}
+header a {
+  color: white;
+  text-decoration: none;
 }
 #addForm {
   display: flex;
@@ -13,6 +27,8 @@
   padding: 15px;
   border-radius: 10px;
   background-color: rgb(1, 2, 53);
+  margin: auto;
+  margin-top: 5%;
 }
 #addForm > h2 {
   color: white;
@@ -30,4 +46,8 @@
   color: white;
   cursor: pointer;
   border-radius: 10px;
+}
+#resultContainer {
+  text-align: center;
+  color: green;
 }

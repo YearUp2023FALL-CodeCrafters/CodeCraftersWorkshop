@@ -80,8 +80,6 @@ function handleAddTodo() {
         console.log(data);
         displayPostReq(data)
     })
-
-
     .catch(error => console.error('Error adding todo', error));
 }
 

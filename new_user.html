@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New User</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h2><a href="/">Home</a></h2>
+      <div>
+        <a href="./new_user.html">Add-User</a>
+        <a href="./add-todo.html">Add Todo</a>
+      </div>
+    </header>
+    <form id="addForm">
+      <h2>Add New User</h2>
+      <input name="name" id="name" type="text" placeholder="Enter name" />
+      <input
+        name="username"
+        id="username"
+        type="text"
+        placeholder="Enter username"
+      />
+      <input
+        name="password"
+        id="password"
+        type="password"
+        placeholder="Enter password"
+      />
+      <input
+        name="confirmPassword"
+        id="confirmPassword"
+        type="password"
+        placeholder="Enter confirm password"
+      />
+
+      <button type="submit" id="addBtn">Add User</button>
+    </form>
+
+    <div id="resultContainer"></div>
+
+    <script src="scripts/new_user.js"></script>
+  </body>
+</html>
