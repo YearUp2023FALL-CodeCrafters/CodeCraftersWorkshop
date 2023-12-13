@@ -77,6 +77,10 @@ function displayUserTodo(userTodos){
 
         let completedCell = row.insertCell(5);
         completedCell.innerHTML = todo.completed ? 'Yes' : 'No';
+        
+        let viewDetails = row.insertCell(6);
+        viewDetails.innerHTML = `<a href="/details.html?id=${todo.id}">View Details</a>`;
+        
     })
     
 
