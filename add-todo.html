@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Todo</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="addBody">
+    <form id="addForm">
+        <h2>Add A Todo</h2>
+      <select name="userSelect" id="userSelect">
+        <option value="">Select User</option>
+      </select>
+      <select name="categorySelect" id="categorySelect">
+        <option value="">Select Category</option>
+      </select>
+      <select name="prioritySelect" id="prioritySelect">
+        <option value="">Select Priority</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <input
+        name="deadline"
+        id="deadline"
+        type="text"
+        placeholder="Enter deadline"
+      />
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Enter description"
+      ></textarea>
+      <button type="submit" id="addBtn">Add Todo</button>
+    </form>
+  </body>
+</html>
