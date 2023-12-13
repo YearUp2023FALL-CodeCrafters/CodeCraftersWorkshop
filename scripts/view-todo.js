@@ -74,8 +74,11 @@ function displayUserTodo(userTodos){
         let priorityCell = row.insertCell(4);
         priorityCell.innerHTML = todo.priority;
 
-        let completedCell = row.insertCell(5);
+        let completedCell = row.insertCell(5)
         completedCell.innerHTML = todo.completed ? '✓' : 'X';
+        
+        let viewDetails = row.insertCell(6);
+        viewDetails.innerHTML = `<a href="/details.html?id=${todo.id}">View Details</a>`;
 
     })
     
