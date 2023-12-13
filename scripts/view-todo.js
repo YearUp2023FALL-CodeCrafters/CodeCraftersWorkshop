@@ -59,7 +59,6 @@ function displayUserTodo(userTodos){
     userTodos.forEach(todo => {
         let row = userTable.insertRow();
 
-
         let idCell = row.insertCell(0);
         idCell.innerHTML = todo.id;
 
@@ -76,10 +75,11 @@ function displayUserTodo(userTodos){
         priorityCell.innerHTML = todo.priority;
 
         let completedCell = row.insertCell(5);
-        completedCell.innerHTML = todo.completed ? 'Yes' : 'No';
+        completedCell.innerHTML = todo.completed ? '✓' : 'X';
+
+        // let userIdCell = row.insertCell(6);
+        // userIdCell.innerHTML = todo.userid;
+
     })
     
-
-
-
 }
