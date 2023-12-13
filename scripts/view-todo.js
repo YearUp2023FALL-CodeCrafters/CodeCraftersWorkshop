@@ -47,12 +47,12 @@ function displayUserTodo(userTodos){
 
     userTable.innerHTML = `
     <tr>
-    <th>ID</th>
-    <th>Category</th>
-    <th>Description</th>
-    <th>Deadline</th>
-    <th>Priority</th>
-    <th>Completed</th>
+        <th>ID</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Deadline</th>
+        <th>Priority</th>
+        <th>Completed</th>
     </tr>`;
 
 
